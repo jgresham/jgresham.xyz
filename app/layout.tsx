@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "../components/theme-provider";
 import { ModeToggle } from "../components/theme-toggle";
 import Image from "next/image";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,8 +39,9 @@ export default function RootLayout({
         >
           {/* Navbar */}
           <div className="flex justify-between items-center p-4">
-            <a className="flex items-center gap-2" href="/">
+            <Link className="flex items-center gap-2" href="/">
               <Image
+                unoptimized
                 aria-hidden
                 src="/pfp.gif"
                 alt="Pfp"
@@ -48,7 +50,7 @@ export default function RootLayout({
                 height={42}
               />
               <h1 className="text-2xl">johns gresham</h1>
-            </a>
+            </Link>
             <ModeToggle />
           </div>
           <main className="grid grid-rows-[20px_1fr_20px] min-h-[70vh] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
