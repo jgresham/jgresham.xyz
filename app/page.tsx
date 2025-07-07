@@ -2,11 +2,62 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8 row-start-2 sm:items-start w-md justify-self-center">
+    <div className="flex flex-col gap-8 row-start-2 sm:items-start max-w-lg justify-self-center">
       <div>
         <a
           className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
-          href="/basedchess"
+          href="/eip-7907"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="File icon"
+            className="pt-1"
+            width={16}
+            height={16}
+          />
+          EIP-7907: Meter Contract Code Size And Increase Limit
+        </a>
+        <span className="text-gray-400 text-xs">Jun 1, 25 - Jul 7, 25</span>
+      </div>
+      <div>
+        <a
+          className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
+          href="/ethcn"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="File icon"
+            className="pt-1"
+            width={16}
+            height={16}
+          />
+          Ethcn: Shadcn UI component library for Ethereum apps
+        </a>
+        <span className="text-gray-400 text-xs">Jun 30, 25</span>
+      </div>
+      <div>
+        <a
+          className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
+          href="/mental-poker"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="File icon"
+            className="pt-1"
+            width={16}
+            height={16}
+          />
+          MentalPoker: Trustless Poker
+        </a>
+        <span className="text-gray-400 text-xs">May 15, 25</span>
+      </div>
+      <div>
+        <a
+          className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
+          href="/based-chess"
         >
           <Image
             aria-hidden

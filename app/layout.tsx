@@ -53,11 +53,12 @@ export default function RootLayout({
             </Link>
             <ModeToggle />
           </div>
-          <main className="grid grid-rows-[20px_1fr_20px] min-h-[70vh] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+          {/* <main className="grid grid-rows-[20px_1fr_20px] min-h-[70vh] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"> */}
+          <main className="min-h-[70vh] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"> 
             {children}
           </main>
           <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center pb-16">
-            <a
+            <Link
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               href="https://warpcast.com/johns"
               target="_blank"
@@ -71,10 +72,10 @@ export default function RootLayout({
                 height={16}
               />
               Farcaster
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              href="https://github.com/jgresham"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -87,8 +88,8 @@ export default function RootLayout({
                 height={16}
               />
               Github
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               href="https://x.com/SirJohnsGresham"
               target="_blank"
@@ -102,7 +103,7 @@ export default function RootLayout({
                 height={16}
               />
               @sirjohnsgresham
-            </a>
+            </Link>
           </footer>
         </ThemeProvider>
       </body>
