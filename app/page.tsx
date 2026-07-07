@@ -6,6 +6,23 @@ export default function Home() {
       <div>
         <a
           className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
+          href="/geo"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="File icon"
+            className="pt-1"
+            width={16}
+            height={16}
+          />
+          Geo: Search & Notifications for geobrowser.io
+        </a>
+        <span className="text-gray-400 text-xs">Sep 25 - Jul 26</span>
+      </div>
+      <div>
+        <a
+          className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
           href="/eip-7907"
         >
           <Image
