@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+const title = "Zippin's 2nd Checkout-Free Store — São Paulo, Brazil";
+const description =
+  "Led the on-site launch of Zippin's 2nd checkout-free customer store in São Paulo: edge device setup, camera and weight sensor testing, and a successful on-schedule opening.";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  openGraph: { title, description, url: "/zippin-brazil", type: "website" },
+  twitter: { card: "summary_large_image", title, description },
+};
 
 function Photo({
   src,

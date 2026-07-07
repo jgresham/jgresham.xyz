@@ -1,3 +1,16 @@
+import type { Metadata } from "next";
+
+const title = "EIP-7907: Meter Contract Code Size And Increase Limit";
+const description =
+  "Contributed to the official specification, an initial Rust (Revm) implementation for Reth, and Foundry's forge support for doubling Ethereum's contract code size limit.";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  openGraph: { title, description, url: "/eip-7907", type: "website" },
+  twitter: { card: "summary_large_image", title, description },
+};
+
 export default function Eip7907() {
   return (
     <div className="min-h-screen p-0 sm:p-10 gap-2 flex flex-col">

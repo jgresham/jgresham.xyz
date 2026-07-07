@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../components/theme-provider";
@@ -16,9 +16,66 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteDescription =
+  "Software engineer building in AI, Ethereum, and robotics. Founder of NiceNode, backend engineer on Geo at Wonderland, and creator of onchain games like BasedChess and MentalPoker.";
+
 export const metadata: Metadata = {
-  title: "Johns",
-  description: "What I am up to",
+  metadataBase: new URL("https://jgresham.xyz"),
+  title: {
+    default: "Johns Gresham — Software Engineer",
+    template: "%s | Johns Gresham",
+  },
+  description: siteDescription,
+  keywords: [
+    "Johns Gresham",
+    "software engineer",
+    "Ethereum developer",
+    "NiceNode",
+    "Wonderland",
+    "Geo",
+    "geobrowser.io",
+    "blockchain engineer",
+    "full stack engineer",
+  ],
+  authors: [{ name: "Johns Gresham", url: "https://jgresham.xyz" }],
+  creator: "Johns Gresham",
+  openGraph: {
+    type: "website",
+    url: "https://jgresham.xyz",
+    siteName: "Johns Gresham",
+    title: "Johns Gresham — Software Engineer",
+    description: siteDescription,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@SirJohnsGresham",
+    creator: "@SirJohnsGresham",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
+  },
+  manifest: "/site.webmanifest",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#030712" },
+  ],
 };
 
 export default function RootLayout({

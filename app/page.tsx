@@ -1,8 +1,28 @@
 import Image from "next/image";
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Johns Gresham",
+  url: "https://jgresham.xyz",
+  jobTitle: "Software Engineer",
+  description:
+    "Software engineer building in AI, Ethereum, and robotics. Founder of NiceNode, backend engineer on Geo at Wonderland.",
+  sameAs: [
+    "https://github.com/jgresham",
+    "https://x.com/SirJohnsGresham",
+    "https://warpcast.com/johns",
+    "https://www.linkedin.com/in/johnsgresham/",
+  ],
+};
+
 export default function Home() {
   return (
     <div className="flex flex-col gap-8 row-start-2 sm:items-start max-w-lg justify-self-center">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       <div>
         <a
           className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
