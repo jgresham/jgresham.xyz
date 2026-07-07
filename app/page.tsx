@@ -91,6 +91,23 @@ export default function Home() {
       <div>
         <a
           className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
+          href="/nicenode"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="File icon"
+            className="pt-1"
+            width={16}
+            height={16}
+          />
+          NiceNode: Run an Ethereum Node — Just Press Start
+        </a>
+        <span className="text-gray-400 text-xs">Mar 22 - Sep 24</span>
+      </div>
+      <div>
+        <a
+          className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
           href="/zippin-brazil"
         >
           <Image
