@@ -18,13 +18,6 @@ export default function NiceNode() {
       <h1 className="text-4xl font-bold mb-8">
         NiceNode: Run an Ethereum Node — Just Press Start
       </h1>
-      <a
-        className="hover:underline hover:underline-offset-4 text-lg text-blue-600"
-        href="https://www.nicenode.xyz"
-        target="_blank"
-      >
-        nicenode.xyz
-      </a>
       <p className="text-gray-400 text-sm">
         Founder, Full Stack Engineer — March 2022 to September 2024
       </p>
@@ -62,14 +55,8 @@ export default function NiceNode() {
           engineer and a designer — who reported to me.
         </li>
         <li>
-          Gave a 40-minute talk and Q&amp;A at Devcon 6 in Bogotá,{" "}
-          <a
-            className="hover:underline hover:underline-offset-4 text-blue-600"
-            href="https://archive.devcon.org/archive/watch/6/why-and-how-to-run-a-node-no-eth-required/"
-            target="_blank"
-          >
-            &quot;Why and How to Run a Node!&quot;
-          </a>
+          Gave a 40-minute talk and Q&amp;A at Devcon 6 in Bogotá,
+          &quot;Why and How to Run a Node!&quot;
         </li>
       </ul>
       <p>
@@ -80,22 +67,6 @@ export default function NiceNode() {
           target="_blank"
         >
           NiceNode/nice-node
-        </a>
-        . Follow along on{" "}
-        <a
-          className="hover:underline hover:underline-offset-4 text-blue-600"
-          href="https://x.com/NiceNodeApp"
-          target="_blank"
-        >
-          X
-        </a>{" "}
-        or{" "}
-        <a
-          className="hover:underline hover:underline-offset-4 text-blue-600"
-          href="https://discord.gg/k3dpYU4Pn9"
-          target="_blank"
-        >
-          Discord
         </a>
         .
       </p>
