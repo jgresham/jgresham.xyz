@@ -14,30 +14,59 @@ export function renderOgImage(title: string, subtitle: string) {
           flexDirection: "column",
           justifyContent: "space-between",
           backgroundColor: "#030712",
-          padding: "80px",
-          fontFamily: "sans-serif",
+          padding: "64px 80px 56px",
+          fontFamily: "system-ui, sans-serif",
         }}
       >
+        {/* Header */}
         <div
           style={{
             display: "flex",
-            fontSize: 28,
-            letterSpacing: 4,
-            color: "#f3c497",
-            textTransform: "uppercase",
+            alignItems: "center",
+            gap: 12,
           }}
         >
-          Johns Gresham
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
+          <div
+            style={{
+              width: 44,
+              height: 44,
+              borderRadius: "9999px",
+              background: "#f3c497",
+              color: "#030712",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: 18,
+              fontWeight: 700,
+              letterSpacing: "-0.5px",
+            }}
+          >
+            JG
+          </div>
           <div
             style={{
               display: "flex",
-              fontSize: 64,
+              fontSize: 18,
+              letterSpacing: "3.5px",
+              color: "#f3c497",
+              textTransform: "uppercase",
+              fontWeight: 600,
+            }}
+          >
+            JOHNS GRESHAM
+          </div>
+        </div>
+
+        {/* Main content */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          <div
+            style={{
+              display: "flex",
+              fontSize: 56,
               fontWeight: 700,
               color: "#ffffff",
-              lineHeight: 1.15,
-              maxWidth: 1000,
+              lineHeight: 1.08,
+              maxWidth: 1020,
             }}
           >
             {title}
@@ -45,25 +74,33 @@ export function renderOgImage(title: string, subtitle: string) {
           <div
             style={{
               display: "flex",
-              fontSize: 32,
-              color: "#99a1af",
-              maxWidth: 920,
+              fontSize: 26,
+              color: "#9ca3af",
+              maxWidth: 960,
+              lineHeight: 1.3,
             }}
           >
             {subtitle}
           </div>
         </div>
+
+        {/* Footer */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            gap: 16,
+            gap: 12,
           }}
         >
           <div
-            style={{ width: 40, height: 4, background: "#f3c497", display: "flex" }}
+            style={{
+              width: 28,
+              height: 3,
+              background: "#f3c497",
+              borderRadius: 999,
+            }}
           />
-          <div style={{ display: "flex", fontSize: 24, color: "#99a1af" }}>
+          <div style={{ display: "flex", fontSize: 18, color: "#6b7280" }}>
             jgresham.xyz
           </div>
         </div>

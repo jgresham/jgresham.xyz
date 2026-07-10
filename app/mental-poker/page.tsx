@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 const title = "MentalPoker: Trustless Poker";
 const description =
@@ -7,8 +8,21 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description, url: "/mental-poker", type: "website" },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: {
+    title,
+    description,
+    url: "/mental-poker",
+    type: "website",
+    siteName: "Johns Gresham",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    site: "@SirJohnsGresham",
+    creator: "@SirJohnsGresham",
+  },
 };
 
 export default function MentalPoker() {
@@ -22,7 +36,13 @@ export default function MentalPoker() {
       <p>Welcome to MentalPoker - Poker onchain. No trusted third party.</p>
       <p>Mental Poker was discovered decades ago by the creators of RSA encryption. 
         However, recently blockchains have given us an open database and financial system to make it practical.</p>
-      <img src="/mental-poker-commutative-vertical-dark.svg" alt="Mental Poker Encryption explained" width={875} height={2168} />
+      <Image
+        src="/mental-poker-commutative-vertical-dark.svg"
+        alt="Mental Poker Encryption explained"
+        width={875}
+        height={2168}
+        unoptimized
+      />
       <p>TLDR; This is commutative encryption - the order of encrypting and decrypting does not matter.</p>
       <p>This can scale up to as many players as a game of poker can handle. Additionally, the core functionality 
         can be used for other games.</p>

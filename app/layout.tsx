@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteDescription =
-  "Software engineer building in AI, Ethereum, and robotics. Founder of NiceNode, backend engineer on Geo at Wonderland, and creator of onchain games like BasedChess and MentalPoker.";
+  "Software engineer building in AI, Ethereum, and robotics. Founder of NiceNode. Backend engineer on Geo at Wonderland. Creator of onchain games and Ethereum improvements.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jgresham.xyz"),
@@ -28,17 +28,23 @@ export const metadata: Metadata = {
   description: siteDescription,
   keywords: [
     "Johns Gresham",
+    "John Gresham",
     "software engineer",
     "Ethereum developer",
     "NiceNode",
     "Wonderland",
     "Geo",
     "geobrowser.io",
-    "blockchain engineer",
+    "blockchain",
+    "onchain games",
+    "EIP-7907",
+    "Mental Poker",
     "full stack engineer",
+    "Rust developer",
   ],
   authors: [{ name: "Johns Gresham", url: "https://jgresham.xyz" }],
   creator: "Johns Gresham",
+  publisher: "Johns Gresham",
   openGraph: {
     type: "website",
     url: "https://jgresham.xyz",
@@ -51,6 +57,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@SirJohnsGresham",
     creator: "@SirJohnsGresham",
+  },
+  alternates: {
+    canonical: "https://jgresham.xyz",
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
   icons: {
     icon: [

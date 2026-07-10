@@ -7,8 +7,21 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description, url: "/based-chess", type: "website" },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: {
+    title,
+    description,
+    url: "/based-chess",
+    type: "website",
+    siteName: "Johns Gresham",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    site: "@SirJohnsGresham",
+    creator: "@SirJohnsGresham",
+  },
 };
 
 export default function BasedChess() {
