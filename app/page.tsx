@@ -7,7 +7,7 @@ const personJsonLd = {
   url: "https://jgresham.xyz",
   jobTitle: "Software Engineer",
   description:
-    "Software engineer building in AI, Ethereum, and robotics. Founder of NiceNode.",
+    "software engineer. prev backend @ Wonderland, founded NiceNode, fullstack @ Zippin",
   image: "https://jgresham.xyz/pfp.png",
   sameAs: [
     "https://github.com/jgresham",

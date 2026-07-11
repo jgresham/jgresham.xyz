@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteDescription =
-  "Software engineer building in AI, Ethereum, and robotics. Founder of NiceNode. Backend engineer on Geo at Wonderland. Creator of onchain games and Ethereum improvements.";
+  "software engineer. prev backend @ Wonderland, founded NiceNode, fullstack @ Zippin";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jgresham.xyz"),

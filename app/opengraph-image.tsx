@@ -7,6 +7,6 @@ export const alt = "Johns Gresham — Software Engineer";
 export default async function Image() {
   return renderOgImage(
     "Johns Gresham",
-    "Software engineer • AI, Ethereum, robotics. Founder of NiceNode."
+    "software engineer. prev backend @ Wonderland, founded NiceNode, fullstack @ Zippin"
   );
 }
