@@ -145,7 +145,7 @@ export default function Home() {
           />
           Zippin&apos;s 2nd Checkout-Free Store — São Paulo, Brazil
         </a>
-        <span className="text-gray-400 text-xs">Nov 19</span>
+        <span className="text-gray-400 text-xs">Nov 2019</span>
       </div>
       <div>
         <a
