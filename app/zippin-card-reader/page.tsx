@@ -45,6 +45,7 @@ function Photo({
         alt={alt}
         width={width}
         height={height}
+        sizes="(max-width: 28rem) 100vw, 28rem"
         className="w-full h-auto rounded-lg border"
       />
       <figcaption className="text-sm text-gray-400">{caption}</figcaption>
