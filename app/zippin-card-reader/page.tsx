@@ -133,6 +133,7 @@ export default function ZippinCardReader() {
           controls
           playsInline
           preload="metadata"
+          poster="/zippin-card-reader/card-entry-demo-poster.jpg"
           width={720}
           height={1280}
         >
