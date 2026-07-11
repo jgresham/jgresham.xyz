@@ -162,7 +162,7 @@ export default function Home() {
           />
           Headless Stripe Card Reader Entry at Zippin
         </a>
-        <span className="text-gray-400 text-xs">Aug 19</span>
+        <span className="text-gray-400 text-xs">Aug 2019</span>
       </div>
 
       {/* <Image
