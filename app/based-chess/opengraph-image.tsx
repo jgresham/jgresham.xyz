@@ -2,8 +2,8 @@ import { renderOgImage, ogSize, ogContentType } from "@/lib/og";
 
 export const size = ogSize;
 export const contentType = ogContentType;
-export const alt = "BasedChess: Chess onchain";
+export const alt = "BasedChess — Verifiable Onchain Chess";
 
 export default async function Image() {
-  return renderOgImage("BasedChess", "Chess onchain — openly verifiable.");
+  return renderOgImage("BasedChess", "Openly verifiable chess onchain. Every move is signed by the player.");
 }

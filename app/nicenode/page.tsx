@@ -8,13 +8,51 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description, url: "/nicenode", type: "website" },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: {
+    title,
+    description,
+    url: "/nicenode",
+    type: "website",
+    siteName: "Johns Gresham",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    site: "@SirJohnsGresham",
+    creator: "@SirJohnsGresham",
+  },
+};
+
+const niceNodeJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "NiceNode",
+  url: "https://www.nicenode.xyz",
+  applicationCategory: "DeveloperApplication",
+  operatingSystem: "macOS, Windows, Linux",
+  description:
+    "Desktop app for running Ethereum and Layer 2 nodes with no command line.",
+  creator: {
+    "@type": "Person",
+    name: "Johns Gresham",
+    url: "https://jgresham.xyz",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function NiceNode() {
   return (
     <div className="min-h-screen p-0 sm:p-10 gap-2 flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(niceNodeJsonLd) }}
+      />
       <h1 className="text-4xl font-bold mb-8">
         NiceNode: Run an Ethereum Node — Just Press Start
       </h1>

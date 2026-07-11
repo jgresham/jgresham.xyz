@@ -7,12 +7,17 @@ const personJsonLd = {
   url: "https://jgresham.xyz",
   jobTitle: "Software Engineer",
   description:
-    "Software engineer building in AI, Ethereum, and robotics. Founder of NiceNode, backend engineer on Geo at Wonderland.",
+    "software engineer. prev backend @ Wonderland, founded NiceNode, fullstack @ Zippin",
+  image: "https://jgresham.xyz/pfp.png",
   sameAs: [
     "https://github.com/jgresham",
     "https://x.com/SirJohnsGresham",
     "https://warpcast.com/johns",
     "https://www.linkedin.com/in/johnsgresham/",
+  ],
+  alumniOf: [
+    { "@type": "Organization", name: "NiceNode" },
+    { "@type": "Organization", name: "Wonderland" },
   ],
 };
 
