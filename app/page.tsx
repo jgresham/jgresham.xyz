@@ -145,7 +145,24 @@ export default function Home() {
           />
           Zippin&apos;s 2nd Checkout-Free Store — São Paulo, Brazil
         </a>
-        <span className="text-gray-400 text-xs">Nov 19</span>
+        <span className="text-gray-400 text-xs">Nov 2019</span>
+      </div>
+      <div>
+        <a
+          className="flex gap-2 hover:underline hover:underline-offset-4 text-lg items-start justify-start"
+          href="/zippin-card-reader"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="File icon"
+            className="pt-1"
+            width={16}
+            height={16}
+          />
+          Headless Stripe Card Reader Entry at Zippin
+        </a>
+        <span className="text-gray-400 text-xs">Aug 2019</span>
       </div>
 
       {/* <Image

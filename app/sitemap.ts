@@ -9,6 +9,7 @@ const routes: Array<{ path: string; priority: number }> = [
   { path: "based-chess", priority: 0.75 },
   { path: "ethcn", priority: 0.7 },
   { path: "zippin-brazil", priority: 0.65 },
+  { path: "zippin-card-reader", priority: 0.65 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
